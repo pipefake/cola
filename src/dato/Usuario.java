@@ -23,9 +23,9 @@ import java.util.Random;
 public class Usuario extends Base{
 
     private int edad;
-    private double tiempoespera;
+    private int tiempoespera;
 
-    public Usuario(int edad, double tiempoespera) {
+    public Usuario(int edad, int tiempoespera) {
         this.edad = edad;
         this.tiempoespera = tiempoespera;
     }
@@ -35,7 +35,7 @@ public class Usuario extends Base{
      *
      * @return the value of tiempoespera
      */
-    public double getTiempoespera() {
+    public int getTiempoespera() {
         return tiempoespera;
     }
 
@@ -44,7 +44,7 @@ public class Usuario extends Base{
      *
      * @param tiempoespera new value of tiempoespera
      */
-    public void setTiempoespera(double tiempoespera) {
+    public void setTiempoespera(int tiempoespera) {
         this.tiempoespera = tiempoespera;
     }
 
