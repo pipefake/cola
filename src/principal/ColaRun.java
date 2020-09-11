@@ -22,29 +22,7 @@ public class ColaRun {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-//        Cola<Usuario> colaUsuario = new Cola<>();
-////        Usuario elem = new Usuario();
-////        
-////        System.out.println(elem.edadAleatoria());
-////        
-////        System.out.println(elem.tiempoAleatoria());
-////        
-////        colaUsuario.encolar(elem);
-//        
-//        Timer timer = new Timer ();
-//        
-//        TimerTask agregarauto = new TimerTask() {
-//            @Override
-//            public void run() {
-//                
-//                Usuario aux = new Usuario();
-//                colaUsuario.encolar(aux);
-//                System.out.println("Puta, lo logré!");
-//                System.out.println(colaUsuario.toString());
-//            }
-//        };
-//        timer.schedule(agregarauto, 5000, 5000);
+        
         
     }
     
