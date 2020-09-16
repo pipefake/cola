@@ -9,10 +9,6 @@
  */
 package principal;
 
-import dato.Usuario;
-import core.Cola;
-import java.util.TimerTask;
-import java.util.Timer;
 
 /**
  *
@@ -24,7 +20,6 @@ public class ColaRun {
      * main
      *
      * @param args
-     * @return
      */
     public static void main(String[] args) {
 

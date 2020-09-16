@@ -17,9 +17,7 @@ public abstract class Base {
 
     /**
      * copy
-     *
-     * @param
-     * @return
+     *@return
      */
     public abstract Base copy();
 }

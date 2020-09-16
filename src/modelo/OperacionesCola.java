@@ -11,6 +11,7 @@ package modelo;
 
 import core.Base;
 import core.Cola;
+import dato.Usuario;
 
 /**
  *
@@ -21,7 +22,8 @@ public class OperacionesCola {
     /**
      * duplicar
      *
-     * @param Cola<T> ColaOriginal
+     * @param <T>
+     * @param ColaOriginal
      * @return ColaDuplicada
      */
     public static <T extends Base> Cola<T> duplicar(Cola<T> ColaOriginal) {
@@ -45,7 +47,11 @@ public class OperacionesCola {
     /**
      * concatenarCola
      *
-     * @param Cola<T> c1, Cola<T> c2
+     * @param <T>
+     * @param c1
+     * @param c2
+     
+     
      * @return ColaConcatenada
      */
     public static <T extends Base> Cola<T> concatenarCola(Cola<T> c1, Cola<T> c2) {
@@ -54,4 +60,9 @@ public class OperacionesCola {
 
         return ColaConcatenada;
     }
+
+    public static String generarHtml(Cola<Usuario> cola) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

@@ -18,14 +18,11 @@ import java.util.LinkedList;
  */
 public class Cola<T extends Base> {
 
-    private LinkedList<T> tope;
+    private final LinkedList<T> tope;
 
     /**
      * /**
      * Cola
-     *
-     * @param
-     * @return
      */
     public Cola() {
         tope = new LinkedList<>();
@@ -34,8 +31,7 @@ public class Cola<T extends Base> {
     /**
      * encolar
      *
-     * @param T elem
-     * @return
+     * @param elem
      */
     public void encolar(T elem) {
         tope.addLast(elem);
@@ -43,9 +39,7 @@ public class Cola<T extends Base> {
 
     /**
      * desencolar
-     *
-     * @param
-     * @return tope
+     *@return tope
      */
     public T desencolar() {
         return tope.removeFirst();
@@ -57,9 +51,7 @@ public class Cola<T extends Base> {
 
     /**
      * toString
-     *
-     * @param
-     * @return cad + ")"
+     *@return cad + ")"
      */
     @Override
     public String toString() {
