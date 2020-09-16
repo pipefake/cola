@@ -32,7 +32,7 @@ public class Usuario extends Base {
     }
 
     /**
-     * getTiempoespera
+     * getTiempoesperahola
      *
      * @param
      * @return tiempoespera
