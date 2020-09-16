@@ -1,103 +1,106 @@
 /**
-* El tipo de cola que haremos es de Usuario, tiene atributos edad y tiempo de transaccion …
-* @author Jonathan.rojas@uao.edu.co Jonathan Rojas Ibanez 2190039
-* @author andrea.perez@uao.edu.co Andrea Perez 2190936
-* @author juan_felipe.jimenez@uao.edu.co Juan Felipe Jimenez Salazar 2190038
-* @date 03 Septiembre 2020si
-* @version 1.0
-*/
+ * El tipo de cola que haremos es de Usuario, tiene atributos edad y tiempo de transaccion …
+ *
+ * @author Jonathan.rojas@uao.edu.co Jonathan Rojas Ibanez 2190039
+ * @author andrea.perez@uao.edu.co Andrea Perez 2190936
+ * @author juan_felipe.jimenez@uao.edu.co Juan Felipe Jimenez Salazar 2190038
+ * @date 03 Septiembre 2020si
+ * @version 1.0
+ */
 package dato;
 
 import core.Base;
-
-
-
-
-
 
 /**
  *
  * @author Universidad Felipe
  */
-public class Usuario extends Base{
+public class Usuario extends Base {
 
     private int edad;
     private int tiempoespera;
 
+    /**
+     * Usuario
+     *
+     * @param edad, tiempoespera
+     * @return
+     */
     public Usuario(int edad, int tiempoespera) {
         this.edad = edad;
         this.tiempoespera = tiempoespera;
     }
 
     /**
-     * Get the value of tiempoespera
+     * getTiempoespera
      *
-     * @return the value of tiempoespera
+     * @param
+     * @return tiempoespera
      */
     public int getTiempoespera() {
         return tiempoespera;
     }
 
     /**
-     * Set the value of tiempoespera
+     * setTiempoespera
      *
-     * @param tiempoespera new value of tiempoespera
+     * @param tiempoespera
+     * @return
      */
     public void setTiempoespera(int tiempoespera) {
         this.tiempoespera = tiempoespera;
     }
 
-
     /**
-     * Get the value of edad
+     * getEdad
      *
-     * @return the value of edad
+     * @param
+     * @return edad
      */
     public int getEdad() {
         return edad;
     }
 
     /**
-     * Set the value of edad
+     * setEdad
      *
-     * @param edad new value of edad
+     * @param edad
+     * @return
      */
     public void setEdad(int edad) {
         this.edad = edad;
     }
 
+    /**
+     * copy
+     *
+     * @param
+     * @return Usuario
+     */
     @Override
     public Base copy() {
         return new Usuario(edad, tiempoespera);
     }
-    
-//    public int edadAleatoria(){
-//        
-//        
-//        Random auxAzar = new Random ();
-//        int edad = auxAzar.nextInt(70-18+1)+18;
-//        return edad;
-//    }
-//    public double tiempoAleatoria(){
-//        
-//        
-//        Random auxAzar = new Random ();
-//        double tiempo = auxAzar.nextInt(15-5+1)+5;
-//        return tiempo;
-//    }
 
+    /**
+     * Usuario
+     *
+     * @param
+     * @return
+     */
     public Usuario() {
     }
 
+    /**
+     * toString
+     *
+     * @param
+     * @return "Usuario{" + "edad=" + edad + ", tiempoespera=" + tiempoespera +
+     * '}'
+     */
     @Override
     public String toString() {
         return "Usuario{" + "edad=" + edad + ", tiempoespera=" + tiempoespera + '}';
     }
 
-   
-    
-
-    
-     
-    
 }
